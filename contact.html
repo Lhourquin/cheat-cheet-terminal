@@ -3,24 +3,27 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Formulaire de contact</title>
+        <link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<h2>Formulaire de contact</h2>
-		<form>
-			Nom:<br>
-			<input type="text" name="Nom">
-			<br>
-			Prénom:<br>
-			<input type="text" name="Prénom">
-			<br>
-			Adresse email:<br>
-			<input type="text" name="email">
-			<br>
-			Votre message:<br>
-			<textarea name="message">
-			</textarea>
-			<input type="submit">
-		</form>
+        <section>
+		<h2>formulaire de contact</h2>
+          <form method="post" action="traitement.php">
+            <label for="Nom">Nom :</label>
+            <input type="text" name="Nom" id="Nom">
+            <br>
+            <label for="Prénom">Prénom :</label>
+            <input type="text" name="Prénom" id="Prénom">
+            <br>
+            <label for="Adresse email">Adresse email :</label>
+            <input type="text" name="email" id="Adresse email">
+            <br>
+            <label for="Votre message">Votre message :</label>
+            <textarea name="message" id="Votre message">
+            </textarea>
+            <input type="submit" value="Envoyer">
+          </form>
+        </section>
 		<footer>
 			<p>Copyright (c) 2018 lucas hourquin</p>
 		</footer>
